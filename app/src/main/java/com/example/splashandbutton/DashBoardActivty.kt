@@ -21,6 +21,7 @@ class DashBoardActivty : AppCompatActivity() {
         setContentView(dashboardBinding.root)
 
         replaceFragment(HomeFragment())
+
         dashboardBinding.buttonNavigationBar.setOnItemSelectedListener {
             when(it.itemId){
                 R.id.home -> replaceFragment(HomeFragment())
